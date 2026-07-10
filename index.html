@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Medical Study Quiz</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="controls">
+        <select id="fileSelect">
+            <option value="data">Normal Questions</option>
+            <option value="exam">Important Questions</option>
+        </select>
+        <select id="categorySelect">
+            <option value="all">All Categories</option>
+        </select>
+        <input type="number" id="countInput" placeholder="Qty">
+        <button onclick="startQuiz()">Start Quiz</button>
+    </div>
+    <div id="quiz-area"></div>
+    
+    <script src="data.js"></script>
+    <script src="exam_questions.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
